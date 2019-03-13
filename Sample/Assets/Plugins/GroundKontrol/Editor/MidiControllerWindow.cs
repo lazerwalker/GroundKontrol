@@ -20,11 +20,14 @@ class MidiControllerWindow : EditorWindow
 
   public Dictionary<string, SelectedItem> NewMappings = new Dictionary<string, SelectedItem>();
 
-  Texture2D _image;
+  Texture2D _whiteImage;
+  Texture2D _blackImage;
+  Boolean _showBlack = false;
+
   void Awake()
   {
-    _image = AssetDatabase.LoadAssetAtPath("Assets/Plugins/GroundKontrol/korg-white.png", typeof(Texture2D)) as Texture2D;
-    Debug.Log($"ASSET {_image}");
+    _whiteImage = AssetDatabase.LoadAssetAtPath("Assets/Plugins/GroundKontrol/korg-white.png", typeof(Texture2D)) as Texture2D;
+    _blackImage = AssetDatabase.LoadAssetAtPath("Assets/Plugins/GroundKontrol/korg-black.png", typeof(Texture2D)) as Texture2D;
   }
 
   void OnGUI()
@@ -75,12 +78,20 @@ class MidiControllerWindow : EditorWindow
 
     EditorGUILayout.EndHorizontal();
 
-    GUILayout.Label(_image);
+    GUILayout.Label(_image());
 
 
     EditorGUILayout.BeginHorizontal();
 
-    GUILayout.Space(350);
+    GUILayout.Space(10);
+    var colorText = _showBlack ? "My controller is white!" : "My controller is black!";
+    if (GUILayout.Button(colorText, GUILayout.Width(140)))
+    {
+      _showBlack = !_showBlack;
+    }
+
+
+    GUILayout.Space(200);
 
     sliders.ForEach((s) =>
     {
@@ -211,5 +222,10 @@ class MidiControllerWindow : EditorWindow
   {
     return t.IsPrimitive &&
            !(t == typeof(string) || t == typeof(bool) || t == typeof(char));
+  }
+
+  private Texture2D _image()
+  {
+    return _showBlack ? _blackImage : _whiteImage;
   }
 }
