@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Tweak your Unity constants using a Korg NanoKontrol 2 MIDI controller",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "rsync -r Sample/Assets/Plugins/GroundKontrol ."
   },
   "author": "https://github.com/lazerwalker",
   "license": "MIT"
