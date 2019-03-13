@@ -1,1 +1,42 @@
-# Ground Kontrol &nbsp;&nbsp; <img src="./rocket.svg" height="40" />  <img src="./knob.svg" height="40" /> <img src="./sliders.svg" height="40" />
+# GroundKontrol &nbsp; <img src="./rocket.svg" height="40" alt="rocket icon"/> &nbsp; <img src="./knob.svg" height="40" alt="knob icon"/> &nbsp; <img src="./sliders.svg" height="40" alt="slider icon" />
+
+Ground Kontrol is a library that aims to make it easy to tweak and tune your Unity game's constants and magic numbers using a [Korg NanoKontrol 2](https://www.amazon.com/Korg-nanoKONTROL2-Slim-Line-Control-Surface/dp/B004M8UZS8) MIDI controller.
+
+TODO: Insert screenshot!
+
+## Installation
+
+Clone this git repo, and copy the `GroundKontrol` folder into your Unity project's `Assets/Plugins` folder.
+
+If you have a Korg NanoKontrol 2 hooked up to your computer, and haven't changed its mappings using its desktop tool, it should just work.
+
+## Usage
+
+There are two ways to use GroundKontrol.
+
+### The `MidiController` component / inspector window
+
+TODO
+
+### The Custom Window
+
+## Development
+
+If you want to hack on GroundKontrol, you should be able to just edit the files directly.
+
+Because Unity doesn't (to my knowledge) know how to deal with assets that aren't within its project structure, there are two separate copies of the library: the one that lives in the root of this project, and one that lives in `Sample/Assets/Plugins/GroundKontrol`. 
+
+For development purposes, it's probably easier to make changes to the copy within `Sample`. If you have the Sample project open in Unity, you'll be able to see your changes live in real-time.
+
+When you're happy with your changes and want to commit them, run `npm run sync` to copy those changes back to the root copy (or just copy/paste them). This isn't great (and means there's duplicate copies of everything in git) but it seems like the least-bad solution for now to enable a functioning dev environment.
+
+## License
+
+GroundKontrol is licensed under the MIT license. See the LICENSE file in this repo for more information.
+
+## Contact
+
+**Em Lazer-Walker**
+
+* https://github.com/lazerwalker
+* https://twitter.com/lazerwalker
