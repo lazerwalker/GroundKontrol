@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>noun_knob_1420691</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="noun_knob_1420691" fill="#000000" fill-rule="nonzero">
+            <g id="Group">
+                <circle id="Oval" cx="12.5" cy="1.684" r="1"></circle>
+                <circle id="Oval" transform="translate(20.631456, 5.051982) rotate(-45.000000) translate(-20.631456, -5.051982) " cx="20.6314564" cy="5.051982" r="1"></circle>
+                <circle id="Oval" transform="translate(4.367956, 21.316031) rotate(-45.000000) translate(-4.367956, -21.316031) " cx="4.3679564" cy="21.3160308" r="1"></circle>
+                <circle id="Oval" cx="24" cy="13.184" r="1"></circle>
+                <circle id="Oval" cx="1" cy="13.184" r="1"></circle>
+                <circle id="Oval" transform="translate(20.631731, 21.315756) rotate(-45.000000) translate(-20.631731, -21.315756) " cx="20.6317308" cy="21.3157564" r="1"></circle>
+                <circle id="Oval" transform="translate(4.367682, 5.052256) rotate(-45.000000) translate(-4.367682, -5.052256) " cx="4.367682" cy="5.0522564" r="1"></circle>
+                <path d="M12.5,21.684 C7.813,21.684 4,17.871 4,13.184 C4,8.497 7.813,4.684 12.5,4.684 C17.187,4.684 21,8.497 21,13.184 C21,17.871 17.187,21.684 12.5,21.684 Z M12.5,6.684 C8.916,6.684 6,9.6 6,13.184 C6,16.768 8.916,19.684 12.5,19.684 C16.084,19.684 19,16.768 19,13.184 C19,9.6 16.084,6.684 12.5,6.684 Z" id="Shape"></path>
+                <path d="M7.196,19.487 C6.94,19.487 6.684,19.389 6.489,19.194 C6.098,18.803 6.098,18.171 6.489,17.78 L11.793,12.477 C12.184,12.086 12.816,12.086 13.207,12.477 C13.598,12.868 13.598,13.5 13.207,13.891 L7.903,19.194 C7.708,19.39 7.452,19.487 7.196,19.487 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
