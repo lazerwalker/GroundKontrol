@@ -212,11 +212,15 @@ class MidiControllerWindow : EditorWindow
       item.Item.Member = item.Members.ElementAt(item.MemberIndex);
 
       item.Item.Range = EditorGUILayout.DelayedIntField("Range", item.Item.Range, GUILayout.Width(_width));
+
+      EditorGUILayout.LabelField("Value: ", _getValue(item).ToString());
     }
 
     EditorGUILayout.EndVertical();
     EditorGUILayout.Space();
   }
+
+  private static object _getValue(SelectedItem item) => MidiController.GetValue(item.Item, item.Object);
 
   private static bool _isNumber(Type t)
   {
