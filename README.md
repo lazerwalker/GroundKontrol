@@ -2,6 +2,10 @@
 
 Ground Kontrol is a library that aims to make it easy to tweak and tune your Unity game's constants and magic numbers using a [Korg NanoKontrol 2](https://www.amazon.com/Korg-nanoKONTROL2-Slim-Line-Control-Surface/dp/B004M8UZS8) MIDI controller.
 
+# WARNING: Neither this library nor this readme are stable! Staying tuned if you actually want to use this.
+
+If you'll be at GDC, I'll be talking about this tool at the Indie Tech Toolbox, Tuesday @ 10am.
+
 TODO: Insert screenshot!
 
 ## Installation
