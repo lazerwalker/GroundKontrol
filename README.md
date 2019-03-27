@@ -68,6 +68,8 @@ For development purposes, it's probably easier to make changes to the copy withi
 
 When you're happy with your changes and want to commit them, run `npm run sync` to copy those changes back to the root copy (or just copy/paste them). This isn't great (and means there's duplicate copies of everything in git) but it seems like the least-bad solution for now to enable a functioning dev environment.
 
+If the concept of running `npm run sync` seems like nonsense to you: you should follow the instructions at https://nodejs.org to install Node.js ("npm" is the "node.js package manager", used under the hood by the new Unity Package Manager). From there, run that command from a terminal window in the root of this project directory. I'm not sure what this process looks like on Windows, so feel free to open a PR or drop me a line if there's subtlety needed there.
+
 ## License
 
 GroundKontrol is licensed under the MIT license. See the LICENSE file in this repo for more information.
