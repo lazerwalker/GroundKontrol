@@ -13,6 +13,8 @@ Clone this git repo, and copy the `GroundKontrol` folder into your Unity project
 
 If you have a Korg NanoKontrol 2 hooked up to your computer, and haven't changed its mappings using its desktop tool, it should just work.
 
+**I'm interested in making this better**, but I'm new to distributing open-source libraries for Unity. If you're feeling generous, feel free to open a Pull Request or open an Issue to let me know how to make installation easier or more standard!
+
 ## Usage
 
 There are two ways to use GroundKontrol.
