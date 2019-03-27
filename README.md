@@ -1,6 +1,6 @@
 # GroundKontrol &nbsp; <img src="./rocket.svg" height="40" alt="rocket icon"/> &nbsp; <img src="./knob.svg" height="40" alt="knob icon"/> &nbsp; <img src="./sliders.svg" height="40" alt="slider icon" />
 
-Ground Kontrol is a library that aims to make it easy to tweak and tune your Unity game's constants and magic numbers using a [Korg NanoKontrol 2](https://www.amazon.com/Korg-nanoKONTROL2-Slim-Line-Control-Surface/dp/B004M8UZS8) MIDI controller.
+GroundKontrol is a library that aims to make it easy to tweak and tune your Unity game's constants and magic numbers using a [Korg NanoKontrol 2](https://www.amazon.com/Korg-nanoKONTROL2-Slim-Line-Control-Surface/dp/B004M8UZS8) MIDI controller.
 
 
 <img src="./window.png" />
@@ -42,11 +42,20 @@ Changes made in the inspector panel will take effect in the window, and vice ver
 
 ### Runtime
 
-TODO: Note about button to hold
+Once you click play, things will just work. While the game is running, you should be able to move the knobs/sliders and watch the game update in real-time. 
 
-Once you click play, things will just work. While the game is running, you
+You can also update the bindings at run-time, and it should still work, although that's relatively untested behavior.
+
+As long as you are holding down the square "stop" button on the controller (TODO: this might be the wrong button!), your inputs won't affect the game. This is useful to "zero out" the controls: since the knobs and sliders both have discrete stop and end points, this exists to let you reset their physical state if you've moved them all the way to the top/bottom but want to keep going in that direction.
+
 
 ### Saving Data Back
+
+When you exit play mode in Unity, GroundKontrol attempts to save all changes you've made via its controls back to the objects you set them on. 
+
+If the objects whose values you are changing are GameObjects directly placed in a scene in the Unity window, this should be straight-forward. If you're modifying a prefab, there's a chance things will get hairy (since GroundKontrol needs to take values changed on individual instances and save them back to the original prefab). 
+
+My apologies if this breaks in ugly ways! In the future, I have plans to build out a configuration system that makes it easier to more explicitly save and load discrete value sets. In the meanwhile, this tool may be more useful in early exploratory stages, and/or on projects where you're confident you have everything up-to-date in version control before you begin tuning.
 
 
 ## Development
