@@ -42,7 +42,10 @@ public class MidiInput
 		}
 	}
 
-	public string Name => $"{Type} {Number + 1}";
+	public string Name
+	{
+		get { return string.Format(@"{0} {1}", Type, Number + 1); }
+	}
 }
 
 [Serializable]
@@ -59,7 +62,7 @@ public class InputConfiguration
 
 	public InputConfiguration(MidiInput input)
 	{
-		Debug.Log("Creating INputConfiguration with MidiInput");
+		Debug.Log("Creating InputConfiguration with MidiInput");
 		Input = input;
 	}
 	
@@ -203,7 +206,7 @@ public class MidiController : MonoBehaviour
 			case MemberTypes.Event:
 				return ((EventInfo)member).EventHandlerType;
 			default:
-				throw new ArgumentException("MemberInfo must be if type FieldInfo, PropertyInfo or EventInfo", nameof(member));
+				throw new ArgumentException("MemberInfo must be if type FieldInfo, PropertyInfo or EventInfo");
 		}
 	}
 }
