@@ -209,9 +209,11 @@ class MidiControllerWindow : EditorWindow
     {
       item.MemberIndex =
           EditorGUILayout.Popup("", item.MemberIndex, item.Members.ToArray(), EditorStyles.popup, GUILayout.Width(_width));
-      item.Item.Member = item.Members.ElementAt(item.MemberIndex);
-
-      item.Item.Range = EditorGUILayout.DelayedIntField("Range", item.Item.Range, GUILayout.Width(_width));
+      if (item.MemberIndex >= 0)
+      {
+        item.Item.Member = item.Members.ElementAt(item.MemberIndex);
+        item.Item.Range = EditorGUILayout.DelayedIntField("Range", item.Item.Range, GUILayout.Width(_width));
+      }
 
       EditorGUILayout.LabelField("Value: ", _getValue(item).ToString());
     }
