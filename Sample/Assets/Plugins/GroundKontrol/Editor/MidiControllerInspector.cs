@@ -72,9 +72,8 @@ internal class SelectedItem
         )
         .Where(o => _isNumber(o.FieldType));
 
-    return fields.Concat<MemberInfo>(properties)
-        .Select((m) => m.Name)
-        .ToList();
+
+    return fields.Select((m) => m.Name).Concat(properties.Select((m) => m.Name)).ToList();
   }
 
   private static bool _isNumber(Type t)
@@ -137,7 +136,7 @@ public class MidiControllerInspector : Editor
 
     // TODO: Buttons as boolean toggles?
 
-    if (item.Members.Count > 0)
+    if (item.Members.Count > 0 && item.MemberIndex >= 0)
     {
       item.MemberIndex =
           EditorGUILayout.Popup("Property", item.MemberIndex, item.Members.ToArray(), EditorStyles.popup);
