@@ -5,7 +5,7 @@ GroundKontrol is a library that aims to make it easy to tweak and tune your Unit
 
 <img src="./window.png" />
 
-It was introduced during the Tech Toolbox panel at the 2019 Independent Games Summit. That talk should be made available at some point in the future on the GDC Vault; this README will be updated when that happens.
+It was introduced during the [Tech Toolbox panel at the 2019 Independent Games Summit](https://www.youtube.com/watch?v=-aXrLvdrnao&t=23m51s). 
 
 ## Installation
 
